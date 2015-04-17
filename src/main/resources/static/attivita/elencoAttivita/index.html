@@ -1,0 +1,70 @@
+<!-- tabella delle attività -->
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Elenco delle attività</h2>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Categoria</th>
+								<th>Nome attività</th>
+								<th>Data inizio</th>
+								<th>Data scadenza</th>
+								<th>Tempo dedicato (ore)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>risk delagation plus</td>
+								<td>aggiungere modulo alfa</td>
+								<td>12/03/2015</td>
+								<td>20/03/2015</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>multiquery system</td>
+								<td>implementazione interfaccia</td>
+								<td>16/06/2015</td>
+								<td>29/06/2015</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>emoticon</td>
+								<td>continuare a sorridere</td>
+								<td>18/08/2015</td>
+								<td>30/08/2015</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>risk delagation plus</td>
+								<td>ch4z39-bis</td>
+								<td>14/08/2015</td>
+								<td>26/08/2015</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>add more gangam style</td>
+								<td>uop</td>
+								<td>19/09/2015</td>
+								<td>05/12/2015</td>
+								<td>7</td>
+							</tr>
+
+							<tr ng-repeat="questaAttivita in attivita">
+								<td><button class="btn btn-default">modifica</button></td>
+								<td>{{questaAttivita.categoria}}</td>
+								<td>{{questaAttivita.nome}}</td>
+								<td>{{questaAttivita.dataInizio | date: 'dd/MM/yyyy'}}</td>
+								<td>{{questaAttivita.dataScadenza | date: 'dd/MM/yyyy'}}</td>
+								<td>{{questaAttivita.tempoDedicato}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
